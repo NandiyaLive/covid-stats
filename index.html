@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Covid-19 Statistics</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.iconscout.com/icon/free/png-256/virus-2165355-1821015.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1dc379e3e7.js " crossorigin="anonymous "></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Local Covid-19 Statistics 🦠</h1>
+            <div class="stats-container">
+                <div class="stats">
+                    <div class="stats-item">
+                        <div class="cases">
+                            <div class="content">
+                                <i class="fas fa-hospital"></i>
+                                <h1 class="title">Cases</h1>
+                                <p>Active</p>
+                                <p class="xyz" id="active"></p>
+                                <p>New</p>
+                                <p class="xyz" id="new-cases"></p>
+                                <p>Total</p>
+                                <p class="xyz" id="total-cases"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                
+                    <div class="stats-item">
+                        <div class="recoverd">
+                            <div class="content">
+                                <i class="fas fa-running"></i>
+                                <h1 class="title">Recoverd</h1>
+                                <p>Total</p>
+                                <p class="xyz" id="recovered"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                
+                    <div class="stats-item">
+                        <div class="deaths">
+                            <div class="content">
+                                <i class="fas fa-bed"></i>
+                                <h1 class="title">Deaths</h1>
+                                <p>New</p>
+                                <p class="xyz" id="new-deaths"></p>
+                                <p>Total</p>
+                                <p class="xyz" id="total-deaths"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <button class="refresh">Refresh</button>
+        <p style="margin-top: 10px; font-size: 12px;">Last Updated : <span id="time"></span></p>
+
+
+        <!-- <i class="fas fa-hospital"></i>  <i class="fas fa-hospital"></i> <i class="fas fa-skull-crossbones"></i>-->
+
+    </div>
+
+    <div class="footer">
+        <p>Statics from Health Promotion Bureau <a href="https://hpb.health.gov.lk/en/api-documentation" target="_blank">official API</a>.</p>
+        <p>Made with <i class="fa fa-heart" style="font-size: 10px; color: crimson;"></i> by
+          <a href="https://neranjana.tk" target="_blank" class="deco">Neranjana</a>.</p>
+          <p>Source code on
+          <a href="https://github.com/NandiyaLive/covid-stats" target="_blank" class="deco">Github</a>.
+        </p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
